@@ -20,19 +20,19 @@ jobs:
       # Customize the JVM maximum heap limit
       SBT_VERSION: 1.4.5
       JVM_OPTS: -Xms256m -Xmx1024m
-      CODECOV_TOKEN: "15533321-31cb-42d1-97c2-737fe6e7e969"
+      CODECOV_TOKEN: '2fa3f1e0-0a43-4c32-ae1f-4a2d20c18c5c'
 
     steps:
       - run: echo 'export ARTIFACT_BUILD=$CIRCLE_PROJECT_REPONAME-$CIRCLE_BUILD_NUM.zip ' >> $BASH_ENV
       - checkout
       - run:
-          name: Compile & Test Polygot
+          name: Compile & Test
           command: cat /dev/null | sbt clean compile stats jacaco
       - run:
           name: Push Coverage Report to Codecov Dashboard
           command: bash <(curl -s https://codecov.io/bash)
       - store_test_results:
-          path: target/test-reports
+          path: target/test-reports/
       # Download and cache dependencies
       - restore_cache:
           keys:
