@@ -1,10 +1,13 @@
 # POLYGOT
+[![CodeFactor](https://www.codefactor.io/repository/github/bharanikrishna7/polygot/badge)](https://www.codefactor.io/repository/github/bharanikrishna7/polygot)
+
 Polygot is a Database access and FRM (Functional Relational Mapping) tool which aims
 to simplify handling database operations.
 
 This project is heavily inspired by [Slick from Lightbend](https://scala-slick.org/).
 
 **CURRENT VERSION : 0.1.0** 
+
 
 ## ROADMAP
 ### VERSION : 1.0.0
