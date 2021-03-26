@@ -1,5 +1,6 @@
 codecov:
   require_ci_to_pass: yes
+  disable_default_path_fixes: false
 
 coverage:
   precision: 2
@@ -13,6 +14,9 @@ parsers:
       loop: yes
       method: no
       macro: no
+
+fixes:
+   - "/home/runner/work/polygot/::"
 
 comment:
   layout: "reach,diff,flags,files,footer"
